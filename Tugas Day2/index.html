@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cek Umur Anda</title>
+    <script>
+        function mengcekUmur() {
+            let umur = prompt("Masukkan umur Anda:");
+            if (umur !== null) {
+                umur = parseInt(umur);  
+                if (umur > 18) {
+                    alert("Anda merupakan orang dewasa");  
+                } else {
+                    alert("Anda belum dewasa");  
+                }
+            } else {
+                alert("Anda tidak memasukkan umur");  
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Apakah anda ingin tahu saat ini anda orang dewasa atau bukan.</h1>
+    <h1>Tekan tombol "Cek Umur" di bawah ini jika anda ingin tahu apakah anda merupakan orang dewasa atau tidak.</h1>
+    <button onclick="mengcekUmur()">Cek Umur</button>
+</body>
+</html>
